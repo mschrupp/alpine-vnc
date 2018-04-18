@@ -2,9 +2,9 @@ FROM alpine:edge
 
 ARG PW
 
-RUN apk --update --no-cache add  supervisor bash x11vnc shadow firefox-esr sudo xvfb \
+RUN apk --update --no-cache add sudo bash supervisor x11vnc shadow firefox-esr xvfb \
 	exo xfce4-whiskermenu-plugin gtk-xfce-engine thunar numix-themes-xfwm4 xfce4-panel xfce4-session xfce4-settings xfce4-terminal xfconf xfdesktop xfwm4 xsetroot \
-	ttf-dejavu numix-themes-gtk2 numix-themes-gtk3 adwaita-icon-theme
+	ttf-dejavu numix-themes-gtk2 adwaita-icon-theme
 
 RUN useradd -m -s /bin/bash max
 
